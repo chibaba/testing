@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Account",
+            "request": "launch",
+            "mainClass": "Account",
+            "projectName": "account_abd7578b"
+        }
+    ]
+}
