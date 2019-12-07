@@ -12,10 +12,22 @@ public class Comparison {
         int number2 = input.nextInt();
 
         if (number1 == number2) {
-            System.out.printf("%d == %d%n", number1);
+            System.out.printf("%d == %d%n", number1, number2);
         }
         if (number1 != number2) {
-            System.out.print("%d != %d%n");
+            System.out.printf("%d != %d%n", number1, number2);
+        }
+        if (number1 > number2 ) {
+            System.out.printf( "%d > %d%n", number1, number2);
+        }
+        if (number1 < number2) {
+            System.out.printf("%d < %d%n", number1,number2);
+        }
+        if (number1 >= number2) {
+            System.out.printf("%d >= %s%n", number1, number2);
+        }
+        if (number1 <= number2) {
+            System.out.printf("%d <= %d%n", number1, number2);
         }
     }
 }
