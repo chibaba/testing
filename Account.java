@@ -3,3 +3,5 @@ public class Account{
     System.out.println("my first class");
  }
 }
+
+// declaring a variable variable to store an integer and obtaining integer from the keyboard
