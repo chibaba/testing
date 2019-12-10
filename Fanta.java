@@ -41,3 +41,17 @@ public class Fanta {
         }
    }
 }
+
+//write a programme that is going to take two numbers and
+//print out the biggest no
+//pseudo
+
+//Ask user to input number
+//collect first number
+//save first number
+//Ask user for second number 
+//collect second number
+//save the secondNumber 
+
+//compare first numbers and second numbers
+//print result to the console

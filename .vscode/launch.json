@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Compares",
+            "request": "launch",
+            "mainClass": "Compares",
+            "projectName": "account_abd7578b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Account",
             "request": "launch",
             "mainClass": "Account",
