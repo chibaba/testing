@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Candis",
+            "request": "launch",
+            "mainClass": "Candis",
+            "projectName": "account_abd7578b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Average",
+            "request": "launch",
+            "mainClass": "Average",
+            "projectName": "account_abd7578b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Product",
+            "request": "launch",
+            "mainClass": "Product",
+            "projectName": "account_abd7578b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Smallest",
+            "request": "launch",
+            "mainClass": "Smallest",
+            "projectName": "account_abd7578b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Position",
+            "request": "launch",
+            "mainClass": "Position",
+            "projectName": "account_abd7578b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Panadas",
+            "request": "launch",
+            "mainClass": "Panadas",
+            "projectName": "account_abd7578b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Compares",
             "request": "launch",
             "mainClass": "Compares",
