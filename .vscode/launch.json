@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AccountTest",
+            "request": "launch",
+            "mainClass": "classwork.AccountTest",
+            "projectName": "account_abd7578b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Candis",
             "request": "launch",
             "mainClass": "Candis",
