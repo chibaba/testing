@@ -1,7 +1,7 @@
  import java.util.Scanner;
 
 public class AccountTest {
-    public static void main(String[] args) {
+    public static void main(String... args) {
         Account account1 = new Account("jane nneka", 40.00);
         Account account2 = new Account("peppe carlos", 60.00);
 
