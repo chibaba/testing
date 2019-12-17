@@ -31,16 +31,16 @@ public class Student {
               if (average >= 90)
               letterGrade = "A";
 
-              if (average >= 80)
+              else if (average >= 80)
               letterGrade = "B";
 
-              if (average >= 70)
+              else if (average >= 70)
               letterGrade = "C";
 
-              if (average >= 60)
+              else if (average >= 60)
               letterGrade = "D";
 
-              if (average >= 50)
+              else
               letterGrade = "F";
 
               return letterGrade;
