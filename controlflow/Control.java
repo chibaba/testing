@@ -20,7 +20,49 @@ public class Control {
 
         while (input.hasNext()) {
             int grade = input.nextInt();
+            total += grade;
+            ++gradeCounter;
+
+            switch(grade / 10) {
+                case 9:
+                case10:
+                 ++aCount;
+                 break;
+
+                 case 8:
+                 ++bCount;
+                 break;
+
+                 case 7:
+                 ++cCount;
+                 break;
+
+                 case 6:
+                 ++dCount;
+                 break;
+
+                 default:
+                 ++fCount;
+                 break;
+            }
         }
+        System.out.printf("%nGrade Report: %n");
+
+        if (gradeCounter != 0) {
+            double average = (double) total / gradeCounter;
+
+            System.out.printf("Total of the %d grades entered is %d%n",
+            gradeCounter, total);
+            System.out.printf("Class average is %.2f%n", average);
+            System.out.printf("%s%n%s%n%d%n%s%d%n%s%d%n%s%d%n",
+            "Number of Students which received eacg grade:",
+            "A: ", aCount,
+            "B: ", bCount,
+            "C ", cCount,
+            "D ", dCount,
+            "F ", fCount);
+        } else 
+           System.out.println("No grade were entered");
 
    }
 }
