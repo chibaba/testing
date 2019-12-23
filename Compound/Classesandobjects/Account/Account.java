@@ -5,6 +5,19 @@ public class Account {
     private String customerEmail;
     private int customerNumber;
 
+    public void deposit(double depositAmount) {
+        this. balance += depositAmount;
+        System.out.println("Deposit of " + depositAmount + " made New balance is " +  balance);
+    }
+    public void withdrawal(double withdrawalAmount) {
+        if(balance - withdrawalAmount < 0) {
+            System.out.println("only " + balance +" available.Withdrawal not processed");
+        } else {
+            balance -= withdrawalAmount;
+            System.out.println("Only " + this.balance + " processed. Remaining balance = " + balance);
+        }
+    }
+
     public void setNumber(String number) {
         this.number = number;
     }
