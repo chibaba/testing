@@ -5,6 +5,14 @@ public class Account {
     private String customerEmail;
     private int customerNumber;
 
+    public Account(int customerNumber, String customerEmail, String customerName, String number, double balance) {
+        this.number = number;
+        this.customerName = customerName;
+        this.customerNumber = customerNumber;
+        this.customerEmail = customerEmail;
+        this.balance = balance;
+    }
+
     public void deposit(double depositAmount) {
         this. balance += depositAmount;
         System.out.println("Deposit of " + depositAmount + " made New balance is " +  balance);
