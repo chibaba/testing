@@ -9,14 +9,30 @@
 
 public class VipCustomer {
     private String name;
-    private String creditLimit;
+    private double creditLimit;
     private String emailAddress;
 
-    public VipCustomer(String name, String creditLimit, String emailAddress ) {
+    public VipCustomer() {
+    this("defaultName", 4302.00, "default@gmail.com");
+    }
+    public  VipCustomer (String name, double creditLimit) {
+     this("name", creditLimit, "unknown@gmail.com");
+    }
+
+    public VipCustomer(String name, double creditLimit, String emailAddress ) {
         this.name = name;
         this.creditLimit = creditLimit;
         this.emailAddress = emailAddress;
     }
+     public String getName() {
+         return name;
+     }
+     public double getCreditLimit() {
+         return creditLimit;
+     }
 
+     public String getEmailAddress() {
+         return emailAddress;
+     }
    
 }
