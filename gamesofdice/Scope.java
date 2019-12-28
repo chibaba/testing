@@ -20,6 +20,13 @@ public class Scope {
     }
 
         public static void useLocalVariable() {
+            int x = 25; //initialised each time useLocalVariable is called
+
+            System.out.printf("%n local x on entering method useLocalVariable is %d%n", x);
+            ++x;
+            System.out.printf("local x before exiting method useLocalVariable is %d%n", x);
+        }
+        public static void useField() {
             
         }
     
