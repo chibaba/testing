@@ -27,7 +27,13 @@ public class Scope {
             System.out.printf("local x before exiting method useLocalVariable is %d%n", x);
         }
         public static void useField() {
-            
+            System.out.printf(
+                "%nfield x on entering method useField is %d%n", x
+            );
+            x *= 10; //modifies class scope's field x
+            System.out.printf(
+                "field x before exiting method useField is %d%n", x
+            );
         }
     
 }
