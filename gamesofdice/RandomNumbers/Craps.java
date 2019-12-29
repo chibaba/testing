@@ -35,6 +35,34 @@ import java.security.SecureRandom;
              gameStatus = Status.LOST;
              break;
              default:
+             gameStatus = Status.CONTINE;
+             myPoint = sumOfDice;
+             System.out.printf("Point is %d%n", myPoint);
          }
+         while (gameStatus == Status.CONTINE) {
+             sumOfDice = rollDice();
+
+             if (sumOfDice == myPoint)
+             gameStatus = Status.WON;
+             else 
+             if (sumOfDice == SEVEN)
+             gameStatus =   Status.LOST;
+
+         }
+         //display won or lost game
+         if (gameStatus ==  Status.WON)
+         System.out.println("player w ins");
+         else
+         System.out.println("player lost");
+     }
+     public static int rollDice() {
+         int die1 = 1 + randomNumbers.nextInt(6); //first die roll
+         int die2  = 1 + randomNumbers.nextInt(6); //decond die roll
+
+         int sum = die1 + die2; //sum of die values
+         //display results on this roll
+         System.out.printf("Player rolled %d + %d = %d%n", die1, die2, sum);
+
+         return sum;
      }
  }
