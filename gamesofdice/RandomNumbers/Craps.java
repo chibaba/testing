@@ -6,3 +6,35 @@
 // you must continue rolling the dice until you “make your point” (i.e., roll that same
 // point value). You lose by rolling a 7 before making your point.
 
+import java.security.SecureRandom;
+ public class Craps {
+     private static final SecureRandom randomNumbers = new SecureRandom();
+     private enum Status { CONTINE, WON , LOST };
+
+     // constants that represents common rolls of the dice
+     private static final int SNAKES_EYES = 2;
+     private static final int TREY = 3;
+     private static final int SEVEN = 7;
+     private static final int YO_LEVEN = 11;
+     private static final int BOX_CARS = 12;
+     //plays one game of craps
+     public static void main(String[] args) {
+         int myPoint = 0; // point if no win or lose on first roll
+         Status gameStatus; // can contain CONTINUE, WON or LOST
+         int sumOfDice = rollDice(); // first roll of the dice
+
+         // determine game status and points based on first roll
+         switch (sumOfDice) {
+             case SEVEN: // win with 7 on the first roll
+             case YO_LEVEN: // WIN WITH 11 in first roll
+             gameStatus = Status.WON;
+             break;
+             case SNAKES_EYES: //LOSE WITH 2 ON THE FIRST ROLL
+             case TREY: // lose with 3 on the first roll
+             case BOX_CARS: //lose with 12 on the first roll
+             gameStatus = Status.LOST;
+             break;
+             default:
+         }
+     }
+ }
