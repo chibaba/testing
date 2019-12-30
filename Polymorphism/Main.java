@@ -62,7 +62,7 @@ public class Main {
             Movie movies = randoMovie();
             System.out.println("Move #" + i + 
                            ": " + movies.getName() + "\n" +
-                           "plot: "+ movies.plot() + "\n"); \
+                           "plot: "+ movies.plot() + "\n"); 
         }
 
     }
