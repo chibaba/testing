@@ -24,8 +24,8 @@
           this.wheels = 4;
           this.engine = true;
       }
-      public boolean getEngine() {
-          return engine;
+      public String starttEngine() {
+          return "Car -> startEngine()";
       }
       public int getCylinders() {
           return cylinders;
@@ -35,6 +35,12 @@
       }
       public int getWheels() {
           return wheels;
+      }
+      public String accelerate() {
+          return "Car -> accelerate";
+      }
+      public String brake() {
+          return "Car -> brake";
       }
   }
 public class Main2 {
