@@ -5,3 +5,4 @@ object orientation in java
 # Composition
 # Encapsulation
 # Polymorphism
+*initialising array with default value of zero*

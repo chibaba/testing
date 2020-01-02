@@ -71,9 +71,9 @@ public class Main2 {
         System.out.println(car.accelerate());
         System.out.println(car.brake());
 
-        Mistsubishi mistsubishi = new Mistsubishi(6, "Outlander VRW 4WD");
-        System.out.println(mistsubishi.starttEngine());
-        System.out.println(mistsubishi.accelerate());
-        System.out.println(mistsubishi.brake());
+        Ford ford = new Ford(6, "Ford Falcon");
+        System.out.println(ford.starttEngine());
+        System.out.println(ford.accelerate());
+        System.out.println(ford.brake());
     }
 }
