@@ -23,44 +23,45 @@ public class Hamburger {
         this.breadRollType = breadRollType;
     }
 
-    public void addHarmburgeradditional1(String name, double price) {
+    public void addHamburgeradditional1(String name, double price) {
         this.additional1Name1 = name;
         this.additional1Price1 = price;
     }
 
-    public void addHarmburgeradditional2(String name, double price) {
+    public void addHamburgeradditional2(String name, double price) {
         this.additional1Name2 = name;
         this.additional1Price2 = price;
     }
 
-    public void addHarmburgeradditional3(String name, double price) {
+    public void addHamburgeradditional3(String name, double price) {
         this.additional1Name3 = name;
         this.additional1Price3 = price;
     }
 
-    public void addHarmburgeradditional4(String name, double price) {
+    public void addHamburgeradditional4(String name, double price) {
         this.additional1Name4 = name;
         this.additional1Price4 = price;
     }
     public double itemisHamburger() {
-        double harmburgerPrice = this.price;
-        System.out.println(this.name + " harmburger " + " on a " + this.bedRollType + " roll "
+        double hamburgerPrice = this.price;
+        System.out.println(this.name + " hamburger " + " on a " + this.bedRollType + " roll "
         + "price is " + "this.price ");
         if(this.additional1Name != null) {
-            harmburgerPrice += this.additional1Price;
+            hamburgerPrice += this.additional1Price;
             System.out.ptintln("Addes " + this.additional1Name + " for an extra " + this.additional1Price);
         }
         if(this.additional2Name != null) {
-            harmburgerPrice += this.additional2Price;
+            hamburgerPrice += this.additional2Price;
             System.out.ptintln("Addes " + this.additional2Name + " for an extra " + this.additional2Price);
         }
         if(this.additional3Name != null) {
-            harmburgerPrice += this.additional3Price;
+            hamburgerPrice += this.additional3Price;
             System.out.ptintln("Addes " + this.additional3Name + " for an extra " + this.additional3Price);
         }
         if(this.additional4Name != null) {
-            harmburgerPrice += this.additional1Price;
+            hamburgerPrice += this.additional1Price;
             System.out.ptintln("Addes " + this.additional4Name + " for an extra " + this.additional4Price);
         }
+        return hamburgerPrice;
     }
 }

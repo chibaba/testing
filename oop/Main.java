@@ -28,3 +28,7 @@
 //burger(base price + all additions)
 // for the two additional classes this may require you to be looking at the base class for pricing
 // and then adding total to finalprice
+
+  Hamburger hamburger = new Hamburger("Basic", "sausage", 3.54, "white");
+  double price = hamburger.itemisHamburger();
+  hamburger.addHamburgerAddition1()
