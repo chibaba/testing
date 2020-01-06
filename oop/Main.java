@@ -31,4 +31,7 @@
 
   Hamburger hamburger = new Hamburger("Basic", "sausage", 3.54, "white");
   double price = hamburger.itemisHamburger();
-  hamburger.addHamburgerAddition1()
+  hamburger.addHamburgerAddition1("tomato", 0.2345);
+  hamburger.addHamburgerAddition2("lettuce " 0.4563);
+  hamburger.addHamburgerAddition3("chesese", 1.2345);
+  System.out.println("Total price is " + hamburger.isHamburger());
