@@ -15,10 +15,7 @@
           this.day = day;
       }
 
-      public int displayAge {
 
-
-      }
 
       public String getFirstName() {
       return firstName;
@@ -49,5 +46,28 @@
     public int getDay() {
         return day;
     }
+    public void setYear(int Year) {
+          this.year = year;
+    }
+    public int getYear() {
+          return year;
+    }
+    public void setMonth(int Month) {
+          this.month = month;
+    }
+    public int getMonth() {
+          return month;
+    }
 
+      public int displayAge() {
+          int year2 = 2020;
+          year2 - this.year = displayAge() {
+            return displayAge;
+      }
+
+      public int maximumHeartRate {
+          220 - displayAge = maximummHeartRate() {
+              return maximumHeartRate;
+              }
+      }
   }
