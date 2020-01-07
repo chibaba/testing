@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SumArray",
+            "request": "launch",
+            "mainClass": "Arrays.SumArray",
+            "projectName": "account_abd7578b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
             "mainClass": "Compound.Classesandobjects.Main",
