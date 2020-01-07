@@ -46,18 +46,19 @@
     public int getDay() {
         return day;
     }
-    public void setYear(int Year) {
+    public void setYear(int year) {
           this.year = year;
     }
     public int getYear() {
           return year;
     }
-    public void setMonth(int Month) {
+    public void setMonth(int month) {
           this.month = month;
     }
     public int getMonth() {
           return month;
     }
+  
 
       public int displayAge() {
           int year2 = 2020;
@@ -65,9 +66,21 @@
             return displayAge;
       }
 
-      public int maximumHeartRate {
+      public int maximumHeartRate() {
           220 - displayAge = maximummHeartRate() {
               return maximumHeartRate;
               }
       }
+      public int targetHeartRate() {
+              if(targetHeartRate <= 0.85 * maximimumHeartRate()) {
+                  return targetHeartRate;
+              } else {
+                  return false
+              }
+              if (targetHeartRate > 0.5 * maximumHeartRate()) {
+                  return targetHeartRate;
+              } else {
+                  return false
+              }
+          }
   }
