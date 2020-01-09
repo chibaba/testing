@@ -1,3 +1,4 @@
+package Polymorphism;
 
 // create a base class called car
 //it should have a few fields that would be appropriate for a generic  car class
@@ -10,11 +11,10 @@
 //
 //show a message for each in the base class
 //Now create 3 sub classes for your favourite vehicles
-// overide the appropriate method to demonstrate polymorphism in use
+// override the appropriate method to demonstrate polymorphism in use
 // put all classes in one java file
   class Car {
-      private boolean engine;
-      private int cylinders;
+    private int cylinders;
       private String name;
       private int wheels;
 
@@ -22,9 +22,9 @@
           this.cylinders = cylinders;
           this.name = name;
           this.wheels = 4;
-          this.engine = true;
+          boolean engine = true;
       }
-      public String starttEngine() {
+      public String startEngine() {
           return "Car -> startEngine()";
       }
       public int getCylinders() {
@@ -59,8 +59,8 @@
           }
 
           @java.lang.Override
-          public String starttEngine() {
-              return " Mistsubishi -> starttEngine()";
+          public String startEngine() {
+              return " Mistsubishi -> startEngine()";
           }
       }
   }
@@ -72,7 +72,7 @@ public class Main2 {
         System.out.println(car.brake());
 
         Ford ford = new Ford(6, "Ford Falcon");
-        System.out.println(ford.starttEngine());
+        System.out.println(ford.startEngine());
         System.out.println(ford.accelerate());
         System.out.println(ford.brake());
     }

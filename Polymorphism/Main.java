@@ -1,4 +1,4 @@
-
+package Polymorphism;
 
 class Movie {
     private String name;
@@ -24,7 +24,7 @@ public String plot() {
 }
  class IndependenceDay extends Movie {
     public IndependenceDay() {
-        super("IndependemceDay");
+        super("IndependenceDay");
     }
     @Override
     public String plot() {
@@ -38,7 +38,7 @@ class MazeRunner extends Movie {
     }
     @Override
     public String plot() {
-        return("apparently we are runnly forward");
+        return("apparently we are running forward");
     }
 }
 class StarWars extends Movie {
