@@ -2,8 +2,8 @@
 
 public class AccountTest {
     public static void main(String... args) {
-        Account account1 = new Account("jane nneka", 40.00);
-        Account account2 = new Account("peppe carlos", 60.00);
+        Addition.Account account1 = new Addition.Account("jane nneka", 40.00);
+        Addition.Account account2 = new Addition.Account("peppe carlos", 60.00);
 
         System.out.printf("%s balance: $%.2f%n",
         account1.getName(), account2.getBalance());

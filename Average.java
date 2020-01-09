@@ -35,7 +35,3 @@ public class Average {
 //   the sum of the three integers
      
       int result =   (number1 + number2 + number3) / 3;
-
-    }
-}
-

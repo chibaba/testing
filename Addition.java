@@ -41,5 +41,11 @@ public class Addition {
         // int average = result / 3;
 
     }
+
+    public static class Account{
+     public static void main (String...args){
+        System.out.println("my first class");
+     }
+    }
 }
 

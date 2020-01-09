@@ -42,4 +42,4 @@ import java.util.Scanner;
              System.out.printf("%d %d %d %d %d", a,b,c,d,e);
          }
 
-     }
+     }j

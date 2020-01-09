@@ -8,12 +8,12 @@
 public class Employee {
     private String firstName;
     private String lastName;
-    private double monthlySalary;
+    private double salary;
      
-    public Employee(String firstName, String lastName, double monthlySalary) {
+    public Employee(String firstName, String lastName, double salary) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.monthlySalary = monthlySalary;
+        this.salary = salary;
     }
 
     public void setFirstName(String firstName) {
@@ -29,8 +29,14 @@ public class Employee {
     public String getLastName() {
         return lastName;
     }
-    public void setMonthlySalary(double monthlySalary) {
-        this.monthlySalary = monthlySalary;
+    public void setSalary(double salary) {
+        if (salary < 0) {
+            
+        }
+        this.salary = salary;
+    }
+    public double getSalary() {
+        return salary;
     }
 
 }

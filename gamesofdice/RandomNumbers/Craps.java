@@ -1,4 +1,4 @@
-// You roll two dice. Each die has six faces, which contain one, two, three, four, five and
+package gamesofdice.RandomNumbers;// You roll two dice. Each die has six faces, which contain one, two, three, four, five and
 // six spots, respectively. After the dice have come to rest, the sum of the spots on the two
 // upward faces is calculated. If the sum is 7 or 11 on the first throw, you win. If the sum
 // is 2, 3 or 12 on the first throw (called “craps”), you lose (i.e., the “house” wins). If the
@@ -9,13 +9,13 @@
 import java.security.SecureRandom;
  public class Craps {
      private static final SecureRandom randomNumbers = new SecureRandom();
-     private enum Status { CONTINE, WON , LOST };
+     private enum Status { CONTINUE, WON , LOST };
 
      // constants that represents common rolls of the dice
      private static final int SNAKES_EYES = 2;
      private static final int TREY = 3;
      private static final int SEVEN = 7;
-     private static final int YO_LEVEN = 11;
+     private static final int ELEVEN = 11;
      private static final int BOX_CARS = 12;
      //plays one game of craps
      public static void main(String[] args) {
@@ -26,7 +26,7 @@ import java.security.SecureRandom;
          // determine game status and points based on first roll
          switch (sumOfDice) {
              case SEVEN: // win with 7 on the first roll
-             case YO_LEVEN: // WIN WITH 11 in first roll
+             case ELEVEN: // WIN WITH 11 in firs roll
              gameStatus = Status.WON;
              break;
              case SNAKES_EYES: //LOSE WITH 2 ON THE FIRST ROLL
@@ -35,11 +35,11 @@ import java.security.SecureRandom;
              gameStatus = Status.LOST;
              break;
              default:
-             gameStatus = Status.CONTINE;
+             gameStatus = Status.CONTINUE;
              myPoint = sumOfDice;
              System.out.printf("Point is %d%n", myPoint);
          }
-         while (gameStatus == Status.CONTINE) {
+         while (gameStatus == Status.CONTINUE) {
              sumOfDice = rollDice();
 
              if (sumOfDice == myPoint)
@@ -57,7 +57,7 @@ import java.security.SecureRandom;
      }
      public static int rollDice() {
          int die1 = 1 + randomNumbers.nextInt(6); //first die roll
-         int die2  = 1 + randomNumbers.nextInt(6); //decond die roll
+         int die2  = 1 + randomNumbers.nextInt(6); //second die roll
 
          int sum = die1 + die2; //sum of die values
          //display results on this roll
