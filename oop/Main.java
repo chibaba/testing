@@ -17,7 +17,7 @@
 //Also create two extra varieties of harmburger (subclasses) to cater for
 //a) a Healthy burger(on a brown ryed bread roll), plus to addition items that can be added
 // a) A healthy burger can have 6 items (Additions) in total
-// hint: you probably want to process the two additional items in the new class (Su classes of Harmburger)
+// hint: you probably want to process the two additional items in the new class (Sub classes of Harmburger)
 // not the base class(Harmburger), since the two additions are only appropriate for this new class
 //(in other words new burger type)
 //b) Deluxe Harmburger - comes with chips and drinks as additions, but no extra additions are allowed.
