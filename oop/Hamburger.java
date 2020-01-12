@@ -4,17 +4,17 @@ public class Hamburger {
     private double price;
     private String breadRollType;
 
-    private String additional1Name;
-    private double additional1Price;
+    private String addition1Name;
+    private double addition1Price;
 
-    private String additional2Name;
-    private double additional2Price;
+    private String addition2Name;
+    private double addition2Price;
 
-    private String additional3Name;
-    private double additional3Price;
+    private String addition3Name;
+    private double addition3Price;
 
-    private String additional4Name;
-    private double additional4Price;
+    private String addition4Name;
+    private double addition4Price;
 
     public Hamburger(String name, String meat, double price, String breadRollType) {
         this.name = name;
@@ -23,44 +23,44 @@ public class Hamburger {
         this.breadRollType = breadRollType;
     }
 
-    public void addHamburgeradditional1(String name, double price) {
-        this.additional1Name1 = name;
-        this.additional1Price1 = price;
+    public void addHamburgeraddition1(String name, double price) {
+        this.addition1Name = name;
+        this.addition1Price = price;
     }
 
-    public void addHamburgeradditional2(String name, double price) {
-        this.additional1Name2 = name;
-        this.additional1Price2 = price;
+    public void addHamburgeraddition2(String name, double price) {
+        this.addition2Name = name;
+        this.addition2Price = price;
     }
 
-    public void addHamburgeradditional3(String name, double price) {
-        this.additional1Name3 = name;
-        this.additional1Price3 = price;
+    public void addHamburgeraddition3(String name, double price) {
+        this.addition3Name = name;
+        this.addition3Price = price;
     }
 
-    public void addHamburgeradditional4(String name, double price) {
-        this.additional1Name4 = name;
-        this.additional1Price4 = price;
+    public void addHamburgeraddition4(String name, double price) {
+        this.addition4Name = name;
+        this.addition4Price = price;
     }
-    public double itemisHamburger() {
+    public double itemizeHamburger() {
         double hamburgerPrice = this.price;
-        System.out.println(this.name + " hamburger " + " on a " + this.bedRollType + " roll "
+        System.out.println(this.name + " hamburger " + " on a " + this.breadRollType + " roll "
         + "price is " + "this.price ");
-        if(this.additional1Name != null) {
-            hamburgerPrice += this.additional1Price;
-            System.out.ptintln("Addes " + this.additional1Name + " for an extra " + this.additional1Price);
+        if(this.addition1Name != null) {
+            hamburgerPrice += this.addition1Price;
+            System.out.println("Addes " + this.addition1Name + " for an extra " + this.addition1Price);
         }
-        if(this.additional2Name != null) {
-            hamburgerPrice += this.additional2Price;
-            System.out.ptintln("Addes " + this.additional2Name + " for an extra " + this.additional2Price);
+        if(this.addition2Name != null) {
+            hamburgerPrice += this.addition2Price;
+            System.out.println("Addes " + this.addition2Name + " for an extra " + this.addition2Price);
         }
-        if(this.additional3Name != null) {
-            hamburgerPrice += this.additional3Price;
-            System.out.ptintln("Addes " + this.additional3Name + " for an extra " + this.additional3Price);
+        if(this.addition3Name != null) {
+            hamburgerPrice += this.addition3Price;
+            System.out.println("Addes " + this.addition3Name + " for an extra " + this.addition3Price);
         }
-        if(this.additional4Name != null) {
-            hamburgerPrice += this.additional1Price;
-            System.out.ptintln("Addes " + this.additional4Name + " for an extra " + this.additional4Price);
+        if(this.addition4Name != null) {
+            hamburgerPrice += this.addition4Price;
+            System.out.println("Addes " + this.addition4Name + " for an extra " + this.addition4Price);
         }
         return hamburgerPrice;
     }
