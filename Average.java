@@ -34,4 +34,3 @@ public class Average {
         int number3 = input.nextInt();
 //   the sum of the three integers
      
-      int result =   (number1 + number2 + number3) / 3;
