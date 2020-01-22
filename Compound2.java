@@ -15,12 +15,12 @@ public class Compound2 {
         double principal = 1000.00;
         double rate = 0.05;
         // display headers
-        System.out.printf("%s%20s%n", "Year", "Amount on Deposit")
+        System.out.printf("%s%20s%n", "Year", "Amount on Deposit");
          for (int year =1; year <10; ++year) {
-             Amount = principal * Math.pow(1.0 + rate, year);
+             amount = principal * Math.pow(1.0 + rate, year);
 
              //Display the amount and year
-             System.out.printf(%4d%,20.2f%n, year, amount);
+             System.out.printf("%4d%,20.2f%n", year, amount);
          }
     }
 

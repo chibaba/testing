@@ -4,18 +4,20 @@ import java.util.Scanner;
 
 public class Smallest1 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in)
-        int nums = input.nextInt()
-        while (n>0) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter next number");
+        int nums = input.nextInt();
+        int smallest = 0;
+        while (nums >0) {
             System.out.println("Enter next number");
-            int nums = input.nextInt();
-            smallest = nums
-            if(number < smallest) {
-                smallest = number
+           // int nums = input.nextInt();
+            //smallest = nums;
+            if(nums < smallest) {
+                smallest = nums;
             }
-            n--;
+            nums--;
         }
-        System.out.printlm(smallest)
+        System.out.println(smallest);
 
     }
 }
