@@ -17,16 +17,16 @@ public class Asterik {
           while (row < counter ) {
             int columna = 10;
             int columnb = 10;
-            int patr = 0;
+            int space = 0;
 
 
             while( columna > row) {
                 System.out.print("*");
                 columna--;
             }
-            while(patr < row){
+            while(space < row){
             System.out.print("  ");
-             patr++;
+             space++;
             }
             while(columnb > row) {
                 System.out.print("*");
